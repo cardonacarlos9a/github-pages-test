@@ -1,0 +1,36 @@
+
+.scene {
+  display: inline-block;
+  width: 200px;
+  height: 260px;
+}
+.card {
+  position: relative;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1s;
+}
+
+.card.is-flipped {
+  transform: rotateY(-180deg);
+}
+
+.card__face {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.card__face--back {
+  position: absolute;
+  transform: rotateY(180deg);
+}
+.rojo{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(204, 63, 73);
+  height: 100vh;
+  width: 100vw;
+margin: auto;
+position: relative;
+}
